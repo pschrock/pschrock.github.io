@@ -1,49 +1,3 @@
-const quotes = [
-  {
-    quote: 'I am concerned that independent thought and critical thinking is waning in our modern world.',
-    author: '-  Ken Jorgustin',
-    source: 'https://modernsurvivalblog.com/modern-survival-ideology/leaders-and-their-blind-followers/'
-  },
-  {
-    quote: 'If you tell the truth, you don’t have to remember anything',
-    author: '-  Mark Twain',
-    source: 'http://factmyth.com/factoids/if-you-tell-the-truth-you-dont-have-to-remember-anything/'
-  },
-  {
-    quote: 'Always forgive your enemies; nothing annoys them so much.',
-    author: '-  Oscar Wilde',
-    source: 'http://www.lookupquotes.com/picture_quotes/always-forgive-your-enemies-nothing-annoys-them-so-much/41256/'
-  },
-  {
-    quote: 'Only I can change my life. No one can do it for me.',
-    author: '-  Carol Burnett',
-    source: 'https://quotefancy.com/quote/757687/Carol-Burnett-Only-I-can-change-my-life-No-one-can-do-it-for-me'
-  },
-  {
-    quote: 'Education is an atmosphere, a discipline, a life',
-    author: '-  Charlotte Mason',
-    source: 'https://www.azquotes.com/quote/732970'
-  },
-  {
-    quote: 'Not all who wander are lost.',
-    author: '-  J. R. R. Tolkien',
-    source: 'https://quotefancy.com/quote/435328/J-R-R-Tolkien-Not-all-who-wander-are-lost'
-  }
-];
-
-// for (i =  0; i<quotes.length; i+=1) {
-//   $('.quote-wrap').animate({
-//     opacity: 1,
-//   }, 1000, () => {
-//     $('.quote-wrap').animate({
-//       opacity: 0,
-//     }, 1000);
-//     $('blockquote').attr('cite', quotes[i].source).text(quotes[i].quote);
-//     $('cite').text(quotes[i].author);
-//   })
-// }
-
-
 const controller = new ScrollMagic.Controller();
 
 // ScrollMagic - Navbar
@@ -139,31 +93,7 @@ $(function() {
      touchScroll:true,
   });
 });
-// const body = $('main').getBoundingClientRect();
-// const about = $('.about').getBoundingClientRect();
-// const port = $('.portfolio').getBoundingClientRect();
-// const contact = $('.contact').getBoundingClientRect();
-//
-// console.log(body.top);
-// console.log(about.top);
-// console.log(port.top);
-// console.log(contact.top);
-// $('.about').scrollTop(() => {
-//   // console.log($('.about').scrollTop());
-//   console.log('action');
-// });
-// const options = {
-//     container: document.body.main,
-//     panelSelector: '> section',
-//     directionThreshold: 50,
-//     delay: 0,
-//     duration: 300,
-//     // easing: function(t) { return t },
-//   };
 
-// $("main", function() {
-//   new PanelSnap();
-// });
 
 // send Message - validates fields are not empty
 $('#sendButton').click((e) => {
