@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang:700|Maven+Pro:900|Muli:900|Raleway');
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Muli', sans-serif;
+// font-family: 'Fahkwang', sans-serif;
+// font-family: 'Maven Pro', sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+}

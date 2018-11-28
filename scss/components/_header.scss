@@ -1,0 +1,25 @@
+.topSpacer {
+  height: 25vh;
+}
+
+.header-cont {
+  padding: 2em;
+  color: $color-font-secondary;
+  text-align: center;
+  background: $color-background-primary;
+  border-top: 5px solid $color-background-tertiary;
+  border-bottom: 5px solid $color-background-tertiary;
+  & h1 {
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 5em;
+    margin: 0;
+  }
+  & .quote-wrap {
+    // opacity: 0;
+    & p {
+      font-size: 2em;
+      margin: 0;
+    }
+  }
+
+}

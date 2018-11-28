@@ -1,0 +1,34 @@
+%section {
+  width: 100%;
+  & .container {
+    width: 60%;
+    margin: auto;
+    & h1 {
+      color: $color-font-secondary;
+    }
+  }
+}
+
+%padding {
+  & .container {
+    padding-top: 15vh;
+  }
+}
+
+%sectionGrid {
+  & .container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 2em;
+  }
+}
+%form-format {
+  width: 96%;
+  border: 2px solid $color-background-four;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+%pagBackground {
+  background: $color-background-four;
+}

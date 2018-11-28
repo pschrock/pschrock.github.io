@@ -1,0 +1,17 @@
+body {
+  background: url("../img/photos/tracks.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.about-img,
+.port-img {
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid $color-background-tertiary;
+}
+
+.card img {
+  max-width: 100%;
+}

@@ -1,0 +1,150 @@
+.home {
+  @extend %section;
+  height: 100vh;
+}
+
+.about,
+.portfolio {
+  @extend %section;
+  @extend %pagBackground;
+  @extend %padding;
+  @extend %sectionGrid;
+  & h1 {
+    margin: 0.5em 0;
+    text-align: center;
+  }
+  & h3,
+  p,
+  ul,
+  blockquote {
+    font-size: 2em;
+  }
+  & ul,
+  p {
+    color: $color-font-tertiary;
+  }
+  & h3,
+  blockquote,
+  cite {
+    color: $color-font-secondary;
+  }
+}
+
+.learning {
+  margin-bottom: 2em;
+}
+
+.portfolio li {
+  padding: 1em 10%;
+}
+
+.card p {
+  font-size: .65em;
+}
+
+h3,
+.portfolio p {
+  text-align: center;
+}
+
+.about h3:nth-last-child(-n+4),
+.personal h3{
+  padding-top: 2em;
+}
+
+.portfolio li:hover {
+  background: $color-background-tertiary;
+  border-radius: 10px;
+  & >div>div>.overlay {
+    top: 0;
+  }
+}
+
+.directory,
+.game,
+.registration,
+.gallery,
+.layout,
+.dashboard {
+  overflow: hidden;
+  position: relative;
+  & img {
+    z-index: 0;
+  }
+  & .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    right: 0;
+    background: $color-background-primary;
+    z-index: 5;
+    transition: top 1s ease;
+    & p {
+      margin-top: 2em;
+      font-size: 1.1em;
+      color: $color-font-secondary;
+    }
+  }
+}
+
+.contact {
+  @extend %section;
+  @extend %pagBackground;
+  height: 100vh;
+  & h1 {
+    padding: calc(68px + 0.5em) 0;
+    text-align: center;
+  }
+  &>.container>div>p {
+    color: $color-font-secondary;
+    text-align: center;
+    margin-top: 3em;
+  }
+  & .contact-wrap {
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  & form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    padding: 2em;
+    max-height: 100%;
+  }
+  & .message-wrap {
+    padding-bottom: 2em;
+  }
+  & label {
+    margin-top: 1em;
+    padding: 0;
+    color: $color-font-secondary;
+  }
+  & input {
+    @extend %form-format;
+  }
+  & textarea {
+    @extend %form-format;
+    height: 100%;
+  }
+  & .social {
+    padding: 2em;
+    & ul {
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      & li {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        & p {
+          color: $color-font-secondary;
+        }
+        & img{
+          display: block;
+          margin-left: auto;
+          height: 4em;
+        }
+      }
+    }
+  }
+}
