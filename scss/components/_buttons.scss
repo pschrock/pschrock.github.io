@@ -7,3 +7,22 @@
   border: none;
   margin-top: 1em;
 }
+#sendButton:hover {
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  & :hover {
+    background: #263a50;
+    border-radius: 5px;
+  }
+  & p {
+    display: inline-block;
+    color: $color-font-secondary;
+    font-size: 1rem;
+    margin: auto;
+    padding: 5px 20px;
+    vertical-align: middle;
+  }
+}

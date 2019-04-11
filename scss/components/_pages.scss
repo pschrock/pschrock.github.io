@@ -6,7 +6,6 @@
 .about,
 .portfolio {
   @extend %section;
-  @extend %pagBackground;
   @extend %padding;
   @extend %sectionGrid;
   & h1 {
@@ -30,6 +29,30 @@
   }
 }
 
+.about {
+  @extend %pageBG1;
+  & .me,
+  .music,
+  .anime,
+  .skills,
+  .learning {
+    padding-bottom: 2em;
+  }
+  & .me:hover,
+  .music:hover,
+  .anime:hover,
+  .skills:hover,
+  .learning:hover {
+    @extend %pageBG2;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+.portfolio {
+  @extend %pageBG2;
+}
+
 .learning {
   margin-bottom: 2em;
 }
@@ -47,9 +70,8 @@ h3,
   text-align: center;
 }
 
-.about h3:nth-last-child(-n+4),
-.personal h3{
-  padding-top: 2em;
+.personal {
+  padding: 2em 0;
 }
 
 .portfolio li:hover {
@@ -90,7 +112,7 @@ h3,
 
 .contact {
   @extend %section;
-  @extend %pagBackground;
+  @extend %pageBG1;
   height: 100vh;
   & h1 {
     padding: calc(68px + 0.5em) 0;

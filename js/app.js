@@ -29,7 +29,7 @@ const scene3 = new ScrollMagic.Scene({
 .setPin('.about-wrap-left')
 .addTo(controller);
 
-//ScrollMagic - About Heading Pinned
+//ScrollMagic - Portfolio Heading Pinned
 const bouncePrtfolioImg = new TweenMax.from('.portfolio .port-wrap-left', 1, {scale: 0.25, opacity: 0, ease:Bounce.easeOut});
 const scene4 = new ScrollMagic.Scene({
   triggerElement: '.portfolio'
