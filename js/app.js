@@ -91,6 +91,7 @@ $(function() {
      easing: "easeOutExpo",
      scrollSpeed: 1100,
      touchScroll:true,
+     scrollbars: false
   });
 });
 
